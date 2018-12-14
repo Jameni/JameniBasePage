@@ -12,6 +12,9 @@ import com.google.gson.Gson;
 import com.jameni.allutillib.common.CommonUtil;
 import com.jameni.allutillib.common.PrintUtil;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 
 /**
  * Created by Administrator on 2017/5/3.
@@ -79,8 +82,38 @@ public abstract class FinalActivity extends AppCompatActivity {
         return CommonUtil.matchList(obj);
     }
 
+    public int getListSize(Object obj) {
+        return CommonUtil.getListSize(obj);
+    }
 
     public <T> T castObject(Object obj) {
         return (T) obj;
     }
+
+
+    public JSONArray getArray(JSONObject obj, String key) {
+        return CommonUtil.getJSONArray(obj, key);
+    }
+
+    public JSONObject getJsonArrayItem(JSONArray array, int i) {
+        return CommonUtil.getJSONArrayItem(array, i);
+    }
+
+    public JSONObject makeJson(Object obj) {
+        if (obj instanceof String) {
+            return CommonUtil.makeJSON((String) obj);
+        } else {
+            return CommonUtil.makeJSON("");
+        }
+    }
+
+    public String getJsonValue(JSONObject obj, String key) {
+        return CommonUtil.getJsonValue(obj, key);
+    }
+
+    public JSONObject getJsonObj(JSONObject obj, String key) {
+        return CommonUtil.getJSONObject(obj, key);
+    }
+
+
 }
