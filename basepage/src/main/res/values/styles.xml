@@ -1,0 +1,156 @@
+<resources>
+
+
+    <!-- 全部match -->
+    <style name="layout_allmatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!-- 全部warp -->
+    <style name="layout_allwarp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- -->
+    <style name="layout_normal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--linear 布局样式-->
+    <style name="layout_linear_vertical" parent="layout_normal">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!--linear 布局样式-->
+    <style name="layout_linear_horizontal" parent="layout_normal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- 小字体 -->
+    <style name="txt_tiny" parent="layout_allwarp">
+        <item name="android:textSize">@dimen/t10sp</item>
+        <item name="android:textColor">@color/main_color</item>
+    </style>
+
+    <style name="txt_tiny_gray" parent="txt_tiny">
+        <item name="android:textColor">@color/txt_gray</item>
+    </style>
+    <!-- 小字体 -->
+    <style name="txt_small" parent="layout_allwarp">
+        <item name="android:textSize">@dimen/t12sp</item>
+        <item name="android:textColor">@color/txt_black</item>
+    </style>
+
+    <style name="txt_small_white" parent="txt_small">
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+
+    <style name="txt_small_blue" parent="txt_small">
+        <item name="android:textColor">@color/main_color</item>
+    </style>
+
+    <style name="txt_small_gray" parent="txt_small">
+        <item name="android:textColor">@color/txt_gray</item>
+    </style>
+
+    <style name="txt_tiny_white" parent="txt_small">
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+    <!-- 普通字体 -->
+    <style name="txt_normal" parent="txt_small">
+        <item name="android:textSize">@dimen/t14sp</item>
+    </style>
+
+    <style name="txt_normal_singleLine" parent="txt_normal">
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="txt_small_singleLine" parent="txt_small">
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="txt_big_singleLine" parent="txt_big">
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="txt_normal_blue" parent="txt_normal">
+        <item name="android:textColor">@color/main_color</item>
+    </style>
+
+    <style name="txt_normal_white" parent="txt_normal">
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+
+    <style name="txt_normal_gray" parent="txt_normal">
+        <item name="android:textColor">@color/txt_gray</item>
+    </style>
+    <!-- 大字体 -->
+    <style name="txt_big" parent="txt_small">
+        <item name="android:textSize">@dimen/t16sp</item>
+    </style>
+
+    <style name="txt_big_blue" parent="txt_big">
+        <item name="android:textColor">@color/main_color</item>
+    </style>
+
+    <style name="txt_big_white" parent="txt_big">
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+
+    <style name="txt_big_gray" parent="txt_big">
+        <item name="android:textColor">@color/txt_gray</item>
+    </style>
+
+    <style name="et_normal" parent="txt_normal">
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">@dimen/nSize10</item>
+        <item name="android:background">@color/transColor</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+    <!-- 横线 -->
+    <style name="lineStyle">
+        <item name="android:background">@color/divider</item>
+        <item name="android:layout_height">0.7dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:contentDescription">@string/app_name</item>
+    </style>
+
+    <!-- 竖线 -->
+    <style name="Verticalline">
+        <item name="android:background">@color/divider</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:contentDescription">@string/app_name</item>
+    </style>
+
+    <!--自定义dialog背景全透明无边框theme -->
+    <style name="MyDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="btnMain" parent="txt_big_white">
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/nSize10</item>
+        <item name="android:background">@drawable/btn_main</item>
+    </style>
+
+
+</resources>

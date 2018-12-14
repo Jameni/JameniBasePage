@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="head_color">#52ade6</color>
+    <color name="txt_black">#444444</color>
+    <color name="bg_gray">#eeeeee</color>
+    <color name="txt_gray">#999999</color>
+    <color name="whiteColor">@android:color/white</color>
+    <color name="transColor">@android:color/transparent</color>
+
+
+    <color name="main_color">#52ade6</color>
+    <color name="divider">#f2f2f2</color>
+    <color name="yellow">#ffec43</color>
+    <color name="red">#ff7043</color>
+    <color name="green">#9ccc65</color>
+    <color name="jameni_dialog_txt_ok">@color/main_color</color>
+    <color name="dark_blue">#0b1041</color>
+    <color name="light_blue">#b4f4ff</color>
+
+</resources>
