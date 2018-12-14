@@ -1,5 +1,7 @@
 package com.jameni.basepage_lib.baseactivity;
 
+import android.app.Activity;
+import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -11,6 +13,8 @@ import android.view.View;
 import com.google.gson.Gson;
 import com.jameni.allutillib.common.CommonUtil;
 import com.jameni.allutillib.common.PrintUtil;
+import com.jameni.basepage_lib.core.BaseAppContext;
+import com.jameni.basepage_lib.util.PageManager;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -30,6 +34,14 @@ public abstract class FinalActivity extends AppCompatActivity {
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         context = this;
+        PageManager.addActivity(this);
+    }
+
+    @Override
+    protected void onDestroy() {
+        isPageFinish = true;
+        super.onDestroy();
+        PageManager.removeActivity(this);
     }
 
     public void tip(String str) {

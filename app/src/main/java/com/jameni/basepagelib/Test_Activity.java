@@ -47,5 +47,10 @@ public class Test_Activity extends ModelActiviy {
 
     }
 
+    @Click
+    void btnRight() {
+        tip("rihgt");
+    }
+
 
 }

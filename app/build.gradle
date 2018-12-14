@@ -29,4 +29,7 @@ dependencies {
 
     annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
     implementation "org.androidannotations:androidannotations-api:$AAVersion"
+
+    implementation 'com.android.support:multidex:1.0.1'
+
 }
