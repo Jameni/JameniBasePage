@@ -12,7 +12,7 @@ public class Test_Activity extends ModelActiviy {
 
     @AfterViews
     void initPage() {
-        setPageTitle("测试页面");
+        setPageTitle("测试");
     }
 
     @Click
@@ -23,19 +23,27 @@ public class Test_Activity extends ModelActiviy {
 
     }
 
+
+
     @Click
     void tv0() {
         //设置标题
+        setPageTitle(tvPageTitle.getText().toString()+"123");
+
     }
 
     @Click
     void tv1() {
         //设置右上方文本
+
+        setRightText(tvRight.getText().toString()+"123");
     }
 
     @Click
     void tv2() {
         //设置右上方图片
+
+        setRightImage(R.mipmap.logo_lib_set);
 
     }
 

@@ -17,7 +17,7 @@
             android:paddingLeft="@dimen/header_back_btn_padding_left"
             android:paddingRight="@dimen/header_back_btn_padding_right"
             android:scaleType="centerInside"
-            android:src="@mipmap/back"
+            android:src="@mipmap/logo_lib_back"
             android:visibility="visible" />
 
         <TextView
@@ -43,6 +43,7 @@
         android:ellipsize="end"
         android:gravity="center"
         android:maxLines="1"
+        android:singleLine="true"
         android:text=""
         android:textColor="@color/whiteColor"
         android:textSize="@dimen/title_text_size" />
@@ -71,6 +72,7 @@
             android:layout_marginLeft="@dimen/header_right_text_margin_left"
             android:layout_marginRight="@dimen/header_right_text_margin_right"
             android:text=""
+            android:gravity="center"
             android:textColor="@color/whiteColor"
             android:textSize="@dimen/right_text_size"
             android:visibility="visible" />
