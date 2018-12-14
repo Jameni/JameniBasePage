@@ -2,7 +2,6 @@ package com.jameni.basepage_lib.baseactivity;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;

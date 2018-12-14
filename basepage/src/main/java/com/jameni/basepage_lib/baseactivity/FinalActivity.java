@@ -1,5 +1,6 @@
 package com.jameni.basepage_lib.baseactivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
@@ -19,11 +20,19 @@ import com.jameni.allutillib.common.PrintUtil;
 public abstract class FinalActivity extends AppCompatActivity {
 
     private Gson gson;
+    protected Context context;
+    protected boolean isPageFinish;
 
     @Override
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        //管理activity
+        context = this;
+    }
+
+    public void tip(String str) {
+        if (isNotNull(context) && isNotNull(str)) {
+            CommonUtil.tip(context, str);
+        }
     }
 
 
@@ -71,62 +80,7 @@ public abstract class FinalActivity extends AppCompatActivity {
     }
 
 
-//    public JSONArray getArray(JSONObject obj, String key) {
-//        return AllUtil.getJsonArrayValue(obj, key);
-//    }
-//
-//    public JSONObject getJsonArrayItem(JSONArray array, int i) {
-//        return AllUtil.getJsonArrayItem(array, i);
-//    }
-//
-//    public JSONObject makeJson(Object obj) {
-//        if (obj instanceof String) {
-//            return AllUtil.makeJson((String) obj);
-//        } else {
-//            return AllUtil.makeJson("");
-//        }
-//    }
-//
-//
-//    public int getJsonArraySize(JSONArray array) {
-//        return AllUtil.getJsonArraySize(array);
-//    }
-//
-//    public String getJsonValue(JSONObject obj, String key) {
-//        return AllUtil.getJsonValue(obj, key);
-//    }
-//
-//    public JSONObject getJsonObj(JSONObject obj, String key) {
-//        return AllUtil.getJsonObject(obj, key);
-//    }
-//
-//    public JSONArray getBackArray(JSONObject obj) {
-//        return AllUtil.getJsonArrayValue(obj, "dataList");
-//    }
-
-
-    //设置全屏
-    public void setFullPage() {
-        View decorView = getWindow().getDecorView();
-        int option = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;//状态栏会遮住Activity
-        decorView.setSystemUiVisibility(option);
-        if (Build.VERSION.SDK_INT >= 21) {
-            getWindow().setStatusBarColor(Color.TRANSPARENT);//这句话可以style设置
-        }
+    public <T> T castObject(Object obj) {
+        return (T) obj;
     }
-
-
-//    public void addParmas(String key, Object obj) {
-//        AppContext.getInstance().getHashMap().put(getSelfValue(key), obj);
-//    }
-//
-//    public <T> T getParmas(String key) {
-//        return (T) AppContext.getInstance().getHashMap().get(getSelfValue(key));
-//    }
-//
-//    public void clearParmas() {
-//        AppContext.getInstance().getHashMap().clear();
-//    }
-
-
 }

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
+import com.google.gson.Gson;
 import com.jameni.allutillib.common.CommonUtil;
 import com.jameni.allutillib.common.PrintUtil;
 
@@ -14,13 +15,36 @@ import com.jameni.allutillib.common.PrintUtil;
 
 public abstract class FinalFragment extends Fragment {
 
+    private Gson gson;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
-    public void print(String str) {
-        PrintUtil.printMsg(str);
+    public void tip(String str) {
+        if (isNotNull(getContext()) && isNotNull(str)) {
+            CommonUtil.tip(getContext(), str);
+        }
+    }
+
+    public void print(Object obj) {
+        if (isNotNull(obj)) {
+            if (obj instanceof String) {
+                PrintUtil.printMsg((String) obj);
+                return;
+            } else {
+                PrintUtil.printMsg(getGson().toJson(obj));
+            }
+        }
+    }
+
+    protected Gson getGson() {
+
+        if (!isNotNull(gson)) {
+            gson = new Gson();
+        }
+        return gson;
     }
 
 

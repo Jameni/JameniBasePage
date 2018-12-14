@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_linear_vertical"
+    android:background="@color/whiteColor"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv0"
+        style="@style/btnMain"
+        android:text="设置标题"
+        android:padding="@dimen/nSize10"/>
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/btnMain"
+        android:text="设置右上方文本"
+        android:padding="@dimen/nSize10"/>
+
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/btnMain"
+        android:text="设置右上方图片"
+        android:padding="@dimen/nSize10"/>
+
+
+</LinearLayout>
