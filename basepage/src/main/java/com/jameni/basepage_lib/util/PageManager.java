@@ -22,13 +22,17 @@ public class PageManager {
     }
 
 
-    public static void exit() {
-        if (lstActivity.size() > 0) {
+    public static void closeAllActivity() {
+        if (lstActivity != null && lstActivity.size() > 0) {
             for (Activity activity : lstActivity) {
-                activity.getLocalClassName();
                 activity.finish();
             }
         }
+    }
+
+    public static void exit() {
+
+        closeAllActivity();
         Process.killProcess(Process.myPid());
     }
 
