@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.jameni.allutillib.common.CommonUtil;
@@ -107,4 +109,18 @@ public abstract class FinalFragment extends Fragment {
         return CommonUtil.getJSONObject(obj, key);
     }
 
+    public String getText(Object obj) {
+        String result = "";
+
+        if (isNotNull(obj)) {
+            if (obj instanceof TextView) {
+                TextView textView = castObject(obj);
+                result = textView.getText().toString();
+            } else if (obj instanceof EditText) {
+                EditText editText = castObject(obj);
+                result = editText.getText().toString();
+            }
+        }
+        return result;
+    }
 }
