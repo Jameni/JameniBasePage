@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -13,7 +14,7 @@ import android.widget.TextView;
 import com.jameni.basepage_lib.R;
 
 
-public  class ModelActiviy extends FinalActivity implements View.OnClickListener {
+public class ModelActiviy extends FinalActivity implements View.OnClickListener {
 
 
     public TextView tvBack, tvRight, tvPageTitle;//回退，标题，右边菜单按钮
@@ -230,6 +231,21 @@ public  class ModelActiviy extends FinalActivity implements View.OnClickListener
         }
     }
 
+
+    public String getText(Object obj) {
+        String result = "";
+
+        if (isNotNull(obj)) {
+            if (obj instanceof TextView) {
+                TextView textView = castObject(obj);
+                result = textView.getText().toString();
+            } else if (obj instanceof EditText) {
+                EditText editText = castObject(obj);
+                result = editText.getText().toString();
+            }
+        }
+        return result;
+    }
 
 
 }
