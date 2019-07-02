@@ -1,10 +1,12 @@
 package com.jameni.basepagelib;
 
 import com.jameni.basepage_lib.baseactivity.ModelActiviy;
+import com.jameni.basepage_lib.util.ShowProgress;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.UiThread;
 
 @EActivity(R.layout.page_test)
 public class Test_Activity extends ModelActiviy {
@@ -24,19 +26,26 @@ public class Test_Activity extends ModelActiviy {
     }
 
 
-
     @Click
     void tv0() {
         //设置标题
-        setPageTitle(tvPageTitle.getText().toString()+"123");
+        setPageTitle(tvPageTitle.getText().toString() + "123");
 
+        ShowProgress.showLoadingProgressDialog(context);dis();
+
+    }
+
+
+    @UiThread(delay = 2000)
+    void dis() {
+        ShowProgress.dismissProgressDialog(context);
     }
 
     @Click
     void tv1() {
         //设置右上方文本
 
-        setRightText(tvRight.getText().toString()+"123");
+        setRightText(tvRight.getText().toString() + "123");
     }
 
     @Click

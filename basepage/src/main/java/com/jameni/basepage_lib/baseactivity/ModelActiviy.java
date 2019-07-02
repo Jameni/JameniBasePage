@@ -1,5 +1,9 @@
 package com.jameni.basepage_lib.baseactivity;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -8,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -16,17 +21,21 @@ import com.jameni.basepage_lib.R;
 
 public class ModelActiviy extends FinalActivity implements View.OnClickListener {
 
-
+    public final static String PROGRESS = "com.jameni.basepage_lib.progress";
     public TextView tvBack, tvRight, tvPageTitle;//回退，标题，右边菜单按钮
     public ImageView imgBack, imgRight;//回退图片
     public RelativeLayout btnRight, headlayout, layoutContent, btnBack;//回退,整个头部
+    public ProgressBar pbLoading;
+    private boolean IsFront; //用来标记这个ACTIVIy 是否显示在最前面，如果在前面 收到广播 播放LOADING，之前是在ONpause 的时候注销广播 发现再回到页面 收不到广播，所以使用一个变量的方式来减少页面刷新
+    public LinearLayout llLoading;
+    public TextView tvLoadingText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.page_model);
         findView();
-
+        registerBroad();
     }
 
 
@@ -46,6 +55,9 @@ public class ModelActiviy extends FinalActivity implements View.OnClickListener 
         layoutContent = findViewById(R.id.layoutContent);
         headlayout = findViewById(R.id.headlayout);
 
+        pbLoading = findViewById(R.id.pbLoading);
+        llLoading = findViewById(R.id.llLoading);
+        tvLoadingText = findViewById(R.id.tvLoadingText);
         btnBack.setOnClickListener(this);
     }
 
@@ -71,6 +83,7 @@ public class ModelActiviy extends FinalActivity implements View.OnClickListener 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        unregisterReceiver(broadcastReceiver);
     }
 
     //页面内容是否展示
@@ -247,5 +260,39 @@ public class ModelActiviy extends FinalActivity implements View.OnClickListener 
         return result;
     }
 
+    private void registerBroad() {
+        registerReceiver(broadcastReceiver, new IntentFilter(PROGRESS));
+    }
 
+    BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (intent.getAction().equals(PROGRESS)) {
+                if (!IsFront) {
+                    return;
+                }
+
+                Bundle bundle = intent.getExtras();
+                if (bundle.getBoolean("state")) {
+                    llLoading.setVisibility(View.VISIBLE);
+                } else {
+                    llLoading.setVisibility(View.GONE);
+                }
+
+            }
+        }
+    };
+
+    @Override
+    protected void onPause() {
+        IsFront = false;
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        IsFront = true;
+        super.onResume();
+    }
 }

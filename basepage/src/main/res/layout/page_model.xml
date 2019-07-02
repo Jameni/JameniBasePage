@@ -8,8 +8,42 @@
     <include layout="@layout/view_normal_head" />
 
     <RelativeLayout
-        android:id="@+id/layoutContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/includeHead"></RelativeLayout>
+        android:layout_below="@+id/includeHead">
+
+        <RelativeLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/pbLoading"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="@dimen/nSize50"
+                android:layout_height="@dimen/nSize50"
+                android:indeterminateTint="#52ade6" />
+
+            <TextView
+                android:id="@+id/tvLoadingText"
+                style="@style/txt_small_blue"
+                android:text="正在加载" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
 </LinearLayout>
