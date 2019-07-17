@@ -23,6 +23,20 @@
         android:padding="@dimen/nSize10"
         android:text="设置右上方图片" />
 
+
+    <TextView
+        android:id="@+id/tv4"
+        style="@style/btnMain"
+        android:padding="@dimen/nSize10"
+        android:text="关闭所有其他页面" />
+
+    <TextView
+        android:id="@+id/tv5"
+        style="@style/btnMain"
+        android:padding="@dimen/nSize10"
+        android:text="跳转下一页" />
+
+
     <LinearLayout style="@style/layout_linear_horizontal">
 
         <TextView

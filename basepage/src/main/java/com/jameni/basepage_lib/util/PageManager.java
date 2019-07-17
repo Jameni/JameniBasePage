@@ -21,6 +21,9 @@ public class PageManager {
         lstActivity.remove(activity);
     }
 
+    public static List<Activity> getLstActivity() {
+        return lstActivity;
+    }
 
     public static void closeAllActivity() {
         if (lstActivity != null && lstActivity.size() > 0) {
@@ -31,10 +34,33 @@ public class PageManager {
     }
 
     public static void exit() {
-
         closeAllActivity();
         Process.killProcess(Process.myPid());
     }
 
+    //关闭所有其他activity
+//    public static void closeOtherActivity(Class<?> cls) {
+//
+//        if (cls != null && lstActivity != null && lstActivity.size() > 0) {
+//            for (Activity activity : lstActivity) {
+//
+//                if (!activity.getClass().equals(cls)) {
+//                    activity.finish();
+//                }
+//            }
+//        }
+//    }
 
+    //关闭所有其他activity
+    public static void closeOtherActivity(Activity ac) {
+
+        if (ac != null && lstActivity != null && lstActivity.size() > 0) {
+            for (Activity activity : lstActivity) {
+
+                if (activity != ac) {
+                    activity.finish();
+                }
+            }
+        }
+    }
 }

@@ -13,6 +13,6 @@ public class MainActivity extends ModelActiviy {
 
 
         Test_Activity_.intent(context).start();
-        finish();
+//        finish();
     }
 }

@@ -1,6 +1,7 @@
 package com.jameni.basepagelib;
 
 import com.jameni.basepage_lib.baseactivity.ModelActiviy;
+import com.jameni.basepage_lib.util.PageManager;
 import com.jameni.basepage_lib.util.ShowProgress;
 
 import org.androidannotations.annotations.AfterViews;
@@ -31,7 +32,8 @@ public class Test_Activity extends ModelActiviy {
         //设置标题
         setPageTitle(tvPageTitle.getText().toString() + "123");
 
-        ShowProgress.showLoadingProgressDialog(context);dis();
+        ShowProgress.showLoadingProgressDialog(context);
+        dis();
 
     }
 
@@ -53,6 +55,19 @@ public class Test_Activity extends ModelActiviy {
         //设置右上方图片
 
         setRightImage(R.mipmap.logo_lib_set);
+
+    }
+
+    @Click
+    void tv4() {
+
+//        PageManager.closeOtherActivity(Test_Activity_.class);
+        PageManager.closeOtherActivity(this);
+    }
+
+    @Click
+    void tv5() {
+        Test_Activity_.intent(context).start();
 
     }
 
