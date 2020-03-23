@@ -8,7 +8,6 @@ public class AppContext extends BaseAppContext{
 
     private static AppContext instance;
 
-
     @Override
     public void onCreate() {
         super.onCreate();
