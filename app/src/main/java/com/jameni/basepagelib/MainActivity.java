@@ -12,7 +12,7 @@ public class MainActivity extends ModelActiviy {
         setContentView(R.layout.activity_main);
 
 
-        Test_Activity_.intent(context).start();
+//        Test_Activity_.intent(context).start();
 //        finish();
     }
 }
