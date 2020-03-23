@@ -1,7 +1,8 @@
 package com.jameni.basepage_lib.core;
 
-import android.support.multidex.MultiDex;
-import android.support.multidex.MultiDexApplication;
+
+import androidx.multidex.MultiDex;
+import androidx.multidex.MultiDexApplication;
 
 import java.util.HashMap;
 

@@ -1,19 +1,14 @@
 package com.jameni.basepage_lib.baseactivity;
 
-import android.app.Activity;
-import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.gson.Gson;
 import com.jameni.allutillib.common.CommonUtil;
 import com.jameni.allutillib.common.PrintUtil;
-import com.jameni.basepage_lib.core.BaseAppContext;
 import com.jameni.basepage_lib.util.PageManager;
 
 import org.json.JSONArray;
@@ -29,7 +24,6 @@ public abstract class FinalActivity extends AppCompatActivity {
     private Gson gson;
     protected Context context;
     protected boolean isPageFinish;
-
     @Override
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
