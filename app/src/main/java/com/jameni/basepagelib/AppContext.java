@@ -1,10 +1,8 @@
 package com.jameni.basepagelib;
 
-import com.jameni.basepage_lib.core.BaseAppContext;
+import android.app.Application;
 
-import java.util.HashMap;
-
-public class AppContext extends BaseAppContext{
+public class AppContext extends Application {
 
     private static AppContext instance;
 
