@@ -22,6 +22,6 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'com.github.Jameni:JameniAllUtil:v1.1.1'
-    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.github.Jameni:JameniAllUtil:v1.1.2.3'
+    implementation 'com.google.code.gson:gson:2.8.5'
 }
