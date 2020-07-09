@@ -1,3 +1,153 @@
 <resources>
     <string name="app_name">basePageLib</string>
+
+    <string name="net_error">网络异常</string>
+    <string name="data_error">数据异常</string>
+    <string name="unknow_error">未知异常</string>
+
+    <string name="save">保存</string>
+    <string name="temp_save">暂存</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_failed">保存失败</string>
+
+    <string name="load_success">加载成功</string>
+    <string name="load_failed">加载失败</string>
+
+    <string name="modify_success">修改成功</string>
+    <string name="modify_failed">修改失败</string>
+
+    <string name="eidt_success">编辑成功</string>
+    <string name="eidt_failed">编辑失败</string>
+
+    <string name="remove_success">删除成功</string>
+    <string name="remove_failed">删除失败</string>
+
+    <string name="add_new_success">新增成功</string>
+    <string name="add_new_failed">新增失败</string>
+
+    <string name="add_success">添加成功</string>
+    <string name="add_failed">添加失败</string>
+
+    <string name="update_success">更新成功</string>
+    <string name="update_failed">更新失败</string>
+
+
+    <string name="refresh_success">刷新成功</string>
+    <string name="refresh_failed">刷新失败</string>
+
+    <string name="collect_success">收藏成功</string>
+    <string name="collect_failed">收藏失败</string>
+
+    <string name="confirm">确定</string>
+    <string name="submit">提交</string>
+    <string name="cancle">取消</string>
+    <string name="ok">@string/confirm</string>
+    <string name="no">@string/cancle</string>
+
+    <string name="exit_app">退出应用</string>
+    <string name="logout">退出登录</string>
+
+    <string name="version_name">版本名称</string>
+    <string name="version_code">版本号</string>
+    <string name="is_latest_version">已经是最新版本</string>
+    <string name="upgrade">升级</string>
+    <string name="do_not_upgrade">不升级</string>
+
+    <string name="upload">上传</string>
+    <string name="add_image">添加图片</string>
+    <string name="add_photo">添加照片</string>
+    <string name="upload_image">上传图片</string>
+    <string name="upload_photo">上传照片</string>
+    <string name="upload_file">上传文件</string>
+    <string name="please_upload_image">请上传图片</string>
+    <string name="please_upload_photo">请上传照片</string>
+    <string name="please_upload_file">请上传文件</string>
+
+    <string name="upload_success">上传成功</string>
+    <string name="upload_failed">上传失败</string>
+    <string name="upload_image_success">图片上传成功</string>
+    <string name="upload_image_failed">图片上传失败</string>
+    <string name="upload_photo_success">照片上传成功</string>
+    <string name="upload_photo_failed">照片上传失败</string>
+    <string name="upload_file_success">文件上传成功</string>
+    <string name="upload_file_failed">文件上传失败</string>
+
+    <string name="add_new">新增</string>
+    <string name="modify">修改</string>
+    <string name="remove">删除</string>
+    <string name="query">查询</string>
+
+    <string name="account">账号</string>
+    <string name="tel">手机号</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="please_input">请输入</string>
+    <string name="please_input_account">请输入账号</string>
+    <string name="please_input_tel">请输入手机号</string>
+    <string name="please_input_user_name">请输入用户名</string>
+    <string name="please_input_contact_tel">请输入联系电话</string>
+    <string name="contact_method">联系方式</string>
+    <string name="please_input_contact_method">请输入联系方式</string>
+    <string name="please_input_name">请输入名称</string>
+
+    <string name="forget_pw">忘记密码</string>
+    <string name="change_pw">修改密码</string>
+    <string name="confirm_pw">确认密码</string>
+    <string name="old_pw">旧密码</string>
+    <string name="new_pw">新密码</string>
+
+    <string name="please_input_old_pw">请输入旧密码</string>
+    <string name="please_input_new_pw">请输入新密码</string>
+    <string name="please_confirm_new_pw">请确认新密码</string>
+    <string name="please_input_pw">请输入密码</string>
+    <string name="please_confirm_pw">请确认密码</string>
+
+    <string name="account_can_not_be_empty">账号不能为空</string>
+    <string name="tel_can_not_be_empty">手机号不能为空</string>
+    <string name="user_name_can_not_be_empty">用户名不能为空</string>
+    <string name="password_can_not_be_empty">密码不能为空</string>
+    <string name="confirm_pw_can_not_be_empty">确认密码不能为空</string>
+    <string name="old_pw_can_not_be_empty">旧密码不能为空</string>
+    <string name="new_pw_can_not_be_empty">新密码不能为空</string>
+    <string name="pw_not_match">两次密码不匹配</string>
+
+    <string name="search">搜索</string>
+    <string name="keyword">关键字</string>
+    <string name="search_keyword">搜索关键字</string>
+    <string name="please_input_keyword">请输入关键字</string>
+    <string name="please_input_search_keyword">请输入搜索关键字</string>
+
+    <string name="temp_no">暂无</string>
+    <string name="temp_no_data">暂无数据</string>
+    <string name="temp_no_info">暂无信息</string>
+    <string name="temp_no_more_data">暂无更多数据</string>
+    <string name="temp_no_contact_method">暂无联系方式</string>
+    <string name="temp_no_latlng_info">暂无经纬度信息</string>
+
+
+    <string name="confirm_logout">是否退出登录？</string>
+    <string name="confirm_exit_app">是否退出应用？</string>
+    <string name="exit">退出</string>
+
+    <string name="locate">定位</string>
+    <string name="location">位置</string>
+    <string name="location_info">位置信息</string>
+    <string name="your_location">您的位置</string>
+    <string name="please_locate_your_current_location">请定位您的当前位置</string>
+    <string name="locate_success">定位成功</string>
+    <string name="locate_failed">定位失败</string>
+    <string name="locate_failed_confirm_gps">定位失败,请确认定位设置是否打开。</string>
+
+
+    <string name="select">选择</string>
+    <string name="select_all">全选</string>
+    <string name="select_all_not">反选</string>
+    <string name="select_time">选择时间</string>
+    <string name="select_date">选择日期</string>
+    <string name="select_sex">选择性别</string>
+    <string name="select_birthday">选择生日</string>
+
+    <string name="file_exist">文件存在</string>
+    <string name="file_not_exist">文件不存在</string>
+
 </resources>

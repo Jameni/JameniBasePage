@@ -115,19 +115,17 @@
 
 
     <!-- 横线 -->
-    <style name="lineStyle">
+    <style name="horizontal_line">
         <item name="android:background">@color/divider</item>
-        <item name="android:layout_height">0.7dip</item>
+        <item name="android:layout_height">@dimen/px1</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:contentDescription">@string/app_name</item>
+
     </style>
 
     <!-- 竖线 -->
-    <style name="Verticalline">
-        <item name="android:background">@color/divider</item>
+    <style name="vertical_line" parent="horizontal_line">
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_width">0.5dp</item>
-        <item name="android:contentDescription">@string/app_name</item>
+        <item name="android:layout_width">@dimen/px1</item>
     </style>
 
     <!--自定义dialog背景全透明无边框theme -->
