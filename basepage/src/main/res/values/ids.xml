@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tv" type="id" />
+    <item name="tvOk" type="id" />
+    <item name="tvCancle" type="id" />
+    <item name="tvYes" type="id" />
+    <item name="tvNo" type="id" />
+
+    <item name="tvSave" type="id" />
+    <item name="tvTempSave" type="id" />
+    <item name="tvSubmit" type="id" />
+    <item name="tvConfirm" type="id" />
+
+    <item name="tvAddNew" type="id" />
+    <item name="tvAdd" type="id" />
+    <item name="tvBuildNew" type="id" />
+
+    <item name="tvModify" type="id" />
+    <item name="tvEdit" type="id" />
+
+    <item name="tvQuery" type="id" />
+    <item name="tvSearch" type="id" />
+    <item name="tvFilter" type="id" />
+    <item name="tvCollect" type="id" />
+
+    <item name="tvRemove" type="id" />
+    <item name="tvDelete" type="id" />
+    <item name="tvUpdate" type="id" />
+    <item name="tvUpgrade" type="id" />
+    <item name="tvNotUpgrade" type="id" />
+
+    <item name="tvLoad" type="id" />
+    <item name="tvUpload" type="id" />
+    <item name="tvDownload" type="id" />
+    <item name="tvRefresh" type="id" />
+    <item name="tvLoadMore" type="id" />
+
+    <item name="tvExit" type="id" />
+    <item name="tvLogout" type="id" />
+    <item name="tvLogin" type="id" />
+
+    <item name="tvVersionName" type="id" />
+    <item name="tvVersionCode" type="id" />
+
+    <item name="tvAddImg" type="id" />
+    <item name="tvUploadImg" type="id" />
+
+    <item name="tvAddPhoto" type="id" />
+    <item name="tvUploadPhoto" type="id" />
+
+    <item name="tvAccount" type="id" />
+    <item name="tvAccountNumber" type="id" />
+    <item name="tvTel" type="id" />
+    <item name="tvTelNumber" type="id" />
+    <item name="tvUser" type="id" />
+    <item name="tvUserName" type="id" />
+    <item name="tvContactMethod" type="id" />
+    <item name="tvContactTel" type="id" />
+    <item name="tvName" type="id" />
+    <item name="tvRealName" type="id" />
+    <item name="tvNickName" type="id" />
+    <item name="tvPw" type="id" />
+    <item name="tvOldPw" type="id" />
+    <item name="tvNewPw" type="id" />
+    <item name="tvConfirmPw" type="id" />
+    <item name="tvForgetPw" type="id" />
+    <item name="tvChangePw" type="id" />
+    <item name="tvModifyPw" type="id" />
+
+    <item name="tvLocate" type="id" />
+    <item name="tvLocation" type="id" />
+    <item name="tvPosition" type="id" />
+    <item name="tvPositionInfo" type="id" />
+
+    <item name="tvSelect" type="id" />
+    <item name="tvSelectNot" type="id" />
+    <item name="tvSelectAll" type="id" />
+    <item name="tvSelectAllNot" type="id" />
+
+    <item name="tvSelectTime" type="id" />
+    <item name="tvSelectDate" type="id" />
+    <item name="tvSelectBirthday" type="id" />
+    <item name="tvSelectSex" type="id" />
+    <item name="tvSelectFile" type="id" />
+    <item name="tvSelectArea" type="id" />
+    <item name="tvSelectPerson" type="id" />
+
+    <item name="tvTime" type="id" />
+    <item name="tvDate" type="id" />
+    <item name="tvYear" type="id" />
+    <item name="tvMonth" type="id" />
+    <item name="tvDay" type="id" />
+    <item name="tvHour" type="id" />
+    <item name="tvMinute" type="id" />
+    <item name="tvSecond" type="id" />
+
+    <item name="tvStartTime" type="id" />
+    <item name="tvEndTime" type="id" />
+    <item name="tvTitle" type="id" />
+    <item name="tvtvHeadTitle" type="id" />
+    <item name="tvStatus" type="id" />
+    <item name="tvDes" type="id" />
+    <item name="tvSuggtion" type="id" />
+    <item name="tvLoadingText" type="id" />
+    <item name="tvArea" type="id" />
+    <item name="tvAreaSize" type="id" />
+    <item name="tvComplete" type="id" />
+    <item name="tvCompleteCount" type="id" />
+    <item name="tvCompleteNumber" type="id" />
+    <item name="tvLength" type="id" />
+    <item name="tvAddress" type="id" />
+    <item name="tvAddr" type="id" />
+    <item name="tvFeedBack" type="id" />
+    <item name="tvNext" type="id" />
+    <item name="tvNextStep" type="id" />
+    <item name="tvCheck" type="id" />
+    <item name="tvCheckInfo" type="id" />
+    <item name="tvConfirmInfo" type="id" />
+
+    <item name="tvPerson" type="id" />
+    <item name="tvVillage" type="id" />
+    <item name="tvCounty" type="id" />
+    <item name="tvTown" type="id" />
+    <item name="tvCity" type="id" />
+    <item name="tvProvince" type="id" />
+    <item name="tvStreet" type="id" />
+    <item name="tvRoad" type="id" />
+    <item name="tvPersonName" type="id" />
+    <item name="tvVillageName" type="id" />
+    <item name="tvCountyName" type="id" />
+    <item name="tvTownName" type="id" />
+    <item name="tvCityName" type="id" />
+    <item name="tvProvinceName" type="id" />
+    <item name="tvStreetName" type="id" />
+    <item name="tvRoadName" type="id" />
+
+    <item name="tvLat" type="id" />
+    <item name="tvLng" type="id" />
+    <item name="tvLatLng" type="id" />
+
+    <item name="tvErrorReason" type="id" />
+    <item name="tvReject" type="id" />
+    <item name="tvDetail" type="id" />
+    <item name="vLine" type="id" />
+    <item name="hLine" type="id" />
+    <item name="tvKey" type="id" />
+    <item name="tvValue" type="id" />
+    <item name="tvTarget" type="id" />
+    <item name="tvType" type="id" />
+    <item name="tvMine" type="id" />
+    <item name="tvHome" type="id" />
+
+    <item name="tvCount" type="id" />
+    <item name="tvTotal" type="id" />
+    <item name="tvTotalCount" type="id" />
+    <item name="tvNum" type="id" />
+    <item name="tvNumber" type="id" />
+    <item name="tvTotalNumber" type="id" />
+    <item name="tvSituation" type="id" />
+
+
+    <item name="et" type="id" />
+    <item name="etName" type="id" />
+    <item name="etUserName" type="id" />
+    <item name="etAccount" type="id" />
+    <item name="etAccountNumber" type="id" />
+    <item name="etTel" type="id" />
+    <item name="etPw" type="id" />
+    <item name="etNewPw" type="id" />
+    <item name="etOldPw" type="id" />
+    <item name="etConfirmPw" type="id" />
+    <item name="etTitle" type="id" />
+    <item name="etCount" type="id" />
+    <item name="etTotalCount" type="id" />
+    <item name="etComment" type="id" />
+    <item name="etDes" type="id" />
+    <item name="etReason" type="id" />
+    <item name="etErrorReason" type="id" />
+    <item name="etAddress" type="id" />
+    <item name="etAddressDes" type="id" />
+    <item name="etSearch" type="id" />
+    <item name="etKeyWord" type="id" />
+    <item name="etKey" type="id" />
+    <item name="etValue" type="id" />
+    <item name="etSituation" type="id" />
+
+    <item name="img" type="id" />
+    <item name="imgAdd" type="id" />
+    <item name="imgPlus" type="id" />
+    <item name="imgMinus" type="id" />
+    <item name="imgDot" type="id" />
+    <item name="imgStatus" type="id" />
+    <item name="imgRemove" type="id" />
+    <item name="imgDelete" type="id" />
+    <item name="imgPic" type="id" />
+    <item name="imgPhoto" type="id" />
+    <item name="imgSuccess" type="id" />
+    <item name="imgFailed" type="id" />
+    <item name="imgError" type="id" />
+    <item name="imgQuestion" type="id" />
+    <item name="imgHead" type="id" />
+    <item name="imgUserHead" type="id" />
+    <item name="imgMap" type="id" />
+    <item name="imgArrow" type="id" />
+    <item name="imgArrowTop" type="id" />
+    <item name="imgArrowBottom" type="id" />
+    <item name="imgArrowLeft" type="id" />
+    <item name="imgArrowRight" type="id" />
+    <item name="imgTop" type="id" />
+    <item name="imgBottom" type="id" />
+    <item name="imgLeft" type="id" />
+    <item name="imgRight" type="id" />
+    <item name="imgUp" type="id" />
+    <item name="imgDown" type="id" />
+
+    <item name="imgClose" type="id" />
+    <item name="imgBack" type="id" />
+    <item name="imgBg" type="id" />
+    <item name="imgLogo" type="id" />
+    <item name="imgTel" type="id" />
+    <item name="imgPw" type="id" />
+    <item name="imgClear" type="id" />
+    <item name="imgNext" type="id" />
+    <item name="imgSelect" type="id" />
+    <item name="imgSelectNot" type="id" />
+    <item name="imgNavigation" type="id" />
+    <item name="imgNodata" type="id" />
+    <item name="imgEdit" type="id" />
+    <item name="imgExit" type="id" />
+    <item name="imgTime" type="id" />
+    <item name="imgClock" type="id" />
+    <item name="imgContact" type="id" />
+    <item name="imgLocation" type="id" />
+    <item name="imgLocationInfo" type="id" />
+    <item name="imgLocate" type="id" />
+    <item name="imgSet" type="id" />
+    <item name="imgSearch" type="id" />
+    <item name="imgReset" type="id" />
+    <item name="imgArea" type="id" />
+    <item name="imgLength" type="id" />
+    <item name="imgLine" type="id" />
+    <item name="imgPoint" type="id" />
+    <item name="imgSave" type="id" />
+    <item name="imgCollect" type="id" />
+    <item name="imgCollectNot" type="id" />
+
+    <item name="llContent" type="id" />
+    <item name="rlContent" type="id" />
+    <item name="llContainer" type="id" />
+    <item name="rlContainer" type="id" />
+    <item name="llHandle" type="id" />
+    <item name="llItems" type="id" />
+    <item name="llActions" type="id" />
+    <item name="rlHandle" type="id" />
+    <item name="rlItems" type="id" />
+    <item name="rlActions" type="id" />
+
+    <item name="llTop" type="id" />
+    <item name="llBottom" type="id" />
+    <item name="llLeft" type="id" />
+    <item name="llRight" type="id" />
+    <item name="llClose" type="id" />
+    <item name="llBack" type="id" />
+    <item name="llNext" type="id" />
+
+    <item name="rlTop" type="id" />
+    <item name="rlBottom" type="id" />
+    <item name="rlLeft" type="id" />
+    <item name="rlRight" type="id" />
+    <item name="rlClose" type="id" />
+    <item name="rlBack" type="id" />
+    <item name="rlNext" type="id" />
+
+    <item name="llAccount" type="id" />
+    <item name="llUser" type="id" />
+    <item name="llPw" type="id" />
+    <item name="llTel" type="id" />
+    <item name="llUpload" type="id" />
+    <item name="llError" type="id" />
+    <item name="llLogin" type="id" />
+
+    <item name="rlAccount" type="id" />
+    <item name="rlUser" type="id" />
+    <item name="rlPw" type="id" />
+    <item name="rlTel" type="id" />
+    <item name="rlUpload" type="id" />
+    <item name="rlError" type="id" />
+
+    <item name="llPage" type="id" />
+    <item name="llArea" type="id" />
+    <item name="llGridItem" type="id" />
+    <item name="llLoading" type="id" />
+    <item name="llTabs" type="id" />
+    <item name="llLocation" type="id" />
+    <item name="llHeadBar" type="id" />
+    <item name="llBottomBar" type="id" />
+    <item name="llAddress" type="id" />
+    <item name="llComplete" type="id" />
+
+    <item name="rlPage" type="id" />
+    <item name="rlArea" type="id" />r
+    <item name="rlGridItem" type="id" />
+    <item name="rlLoading" type="id" />
+    <item name="rlTabs" type="id" />
+    <item name="rlLocation" type="id" />
+    <item name="rlHeadBar" type="id" />
+    <item name="rlBottomBar" type="id" />
+    <item name="rlAddress" type="id" />
+    <item name="rlComplete" type="id" />
+    <item name="rlLogin" type="id" />
+
+    <item name="llSet" type="id" />
+    <item name="rlSet" type="id" />
+
+    <item name="llTitle" type="id" />
+    <item name="rlTitle" type="id" />
+
+    <item name="llNoData" type="id" />
+    <item name="rlNoData" type="id" />
+
+    <item name="llAction" type="id" />
+    <item name="rlAction" type="id" />
+
+    <item name="llSearch" type="id" />
+    <item name="rlSearch" type="id" />
+
+    <item name="banner" type="id" />
+    <item name="llBanner" type="id" />
+    <item name="rlBanner" type="id" />
+
+    <item name="lvMain" type="id" />
+    <item name="lvInfo" type="id" />
+    <item name="vpMain" type="id" />
+    <item name="gvMain" type="id" />
+    <item name="gvType" type="id" />
+    <item name="lvType" type="id" />
+
+    <item name="lvPic" type="id" />
+    <item name="lvPhoto" type="id" />
+    <item name="lvImage" type="id" />
+
+    <item name="gvPic" type="id" />
+    <item name="gvPhoto" type="id" />
+    <item name="gvImage" type="id" />
+
+    <item name="lvVillage" type="id" />
+    <item name="lvCounty" type="id" />
+    <item name="lvTown" type="id" />
+    <item name="lvCity" type="id" />
+    <item name="lvProvince" type="id" />
+    <item name="gvVillage" type="id" />
+    <item name="gvCounty" type="id" />
+    <item name="gvTown" type="id" />
+    <item name="gvCity" type="id" />
+    <item name="gvProvince" type="id" />
+
+    <item name="lvArea" type="id" />
+    <item name="gvArea" type="id" />
+
+    <item name="loadingProgressBar" type="id" />
+    <item name="navigationBar" type="id" />
+
+    <item name="barChart" type="id" />
+    <item name="lineChart" type="id" />
+    <item name="pieChart" type="id" />
+
+</resources>

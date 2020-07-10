@@ -6,40 +6,69 @@
     <string name="unknow_error">未知异常</string>
 
     <string name="save">保存</string>
-    <string name="temp_save">暂存</string>
     <string name="save_success">保存成功</string>
     <string name="save_failed">保存失败</string>
 
+    <string name="temp_save">暂存</string>
+    <string name="temp_save_success">暂存成功</string>
+    <string name="temp_save_failed">暂存失败</string>
+
+    <string name="load">加载</string>
     <string name="load_success">加载成功</string>
     <string name="load_failed">加载失败</string>
 
+    <string name="modify">修改</string>
+    <string name="modify_info">修改信息</string>
     <string name="modify_success">修改成功</string>
     <string name="modify_failed">修改失败</string>
 
+    <string name="query">查询</string>
+    <string name="query_success">查询成功</string>
+    <string name="query_failed">查询失败</string>
+
+    <string name="eidt">编辑</string>
     <string name="eidt_success">编辑成功</string>
     <string name="eidt_failed">编辑失败</string>
 
+    <string name="remove">删除</string>
     <string name="remove_success">删除成功</string>
     <string name="remove_failed">删除失败</string>
 
+    <string name="add_new">新增</string>
     <string name="add_new_success">新增成功</string>
     <string name="add_new_failed">新增失败</string>
 
+    <string name="build_new">新建</string>
+    <string name="build_success">新建成功</string>
+    <string name="build_failed">新建失败</string>
+
+    <string name="add">添加</string>
     <string name="add_success">添加成功</string>
     <string name="add_failed">添加失败</string>
 
+    <string name="update">更新</string>
     <string name="update_success">更新成功</string>
     <string name="update_failed">更新失败</string>
 
 
+    <string name="refresh">刷新</string>
     <string name="refresh_success">刷新成功</string>
     <string name="refresh_failed">刷新失败</string>
 
+    <string name="collect">收藏</string>
     <string name="collect_success">收藏成功</string>
     <string name="collect_failed">收藏失败</string>
 
-    <string name="confirm">确定</string>
     <string name="submit">提交</string>
+    <string name="submit_success">提交成功</string>
+    <string name="submit_failed">提交失败</string>
+
+    <string name="filter">筛选</string>
+    <string name="filter_success">筛选成功</string>
+    <string name="filter_failed">筛选失败</string>
+
+
+    <string name="confirm">确定</string>
     <string name="cancle">取消</string>
     <string name="ok">@string/confirm</string>
     <string name="no">@string/cancle</string>
@@ -47,49 +76,56 @@
     <string name="exit_app">退出应用</string>
     <string name="logout">退出登录</string>
 
-    <string name="version_name">版本名称</string>
+    <string name="version_name">版本名</string>
+    <string name="version_name2">版本名称</string>
     <string name="version_code">版本号</string>
     <string name="is_latest_version">已经是最新版本</string>
     <string name="upgrade">升级</string>
     <string name="do_not_upgrade">不升级</string>
 
     <string name="upload">上传</string>
-    <string name="add_image">添加图片</string>
-    <string name="add_photo">添加照片</string>
-    <string name="upload_image">上传图片</string>
-    <string name="upload_photo">上传照片</string>
-    <string name="upload_file">上传文件</string>
-    <string name="please_upload_image">请上传图片</string>
-    <string name="please_upload_photo">请上传照片</string>
-    <string name="please_upload_file">请上传文件</string>
-
     <string name="upload_success">上传成功</string>
     <string name="upload_failed">上传失败</string>
-    <string name="upload_image_success">图片上传成功</string>
-    <string name="upload_image_failed">图片上传失败</string>
+
+    <string name="add_photo">添加照片</string>
+    <string name="upload_photo">上传照片</string>
     <string name="upload_photo_success">照片上传成功</string>
     <string name="upload_photo_failed">照片上传失败</string>
+    <string name="please_upload_photo">请上传照片</string>
+
+    <string name="add_image">添加图片</string>
+    <string name="upload_image">上传图片</string>
+    <string name="upload_image_success">图片上传成功</string>
+    <string name="upload_image_failed">图片上传失败</string>
+    <string name="please_upload_image">请上传图片</string>
+
+
+    <string name="add_file">添加文件</string>
+    <string name="upload_file">上传文件</string>
     <string name="upload_file_success">文件上传成功</string>
     <string name="upload_file_failed">文件上传失败</string>
+    <string name="please_upload_file">请上传文件</string>
 
-    <string name="add_new">新增</string>
-    <string name="modify">修改</string>
-    <string name="remove">删除</string>
-    <string name="query">查询</string>
-
-    <string name="account">账号</string>
-    <string name="tel">手机号</string>
+    <string name="account">账户</string>
+    <string name="account_number">账号</string>
+    <string name="tel">手机</string>
+    <string name="tel_number">手机号</string>
+    <string name="user">用户</string>
     <string name="user_name">用户名</string>
-    <string name="password">密码</string>
+
     <string name="please_input">请输入</string>
-    <string name="please_input_account">请输入账号</string>
+    <string name="please_input_account">请输入账户</string>
+    <string name="please_input_account_number">请输入账号</string>
     <string name="please_input_tel">请输入手机号</string>
     <string name="please_input_user_name">请输入用户名</string>
     <string name="please_input_contact_tel">请输入联系电话</string>
     <string name="contact_method">联系方式</string>
     <string name="please_input_contact_method">请输入联系方式</string>
     <string name="please_input_name">请输入名称</string>
+    <string name="please_input_name2">请输入名字</string>
+    <string name="please_input_name3">请输入姓名</string>
 
+    <string name="password">密码</string>
     <string name="forget_pw">忘记密码</string>
     <string name="change_pw">修改密码</string>
     <string name="confirm_pw">确认密码</string>
@@ -112,6 +148,8 @@
     <string name="pw_not_match">两次密码不匹配</string>
 
     <string name="search">搜索</string>
+    <string name="search_success">搜索成功</string>
+    <string name="search_failed">搜索失败</string>
     <string name="keyword">关键字</string>
     <string name="search_keyword">搜索关键字</string>
     <string name="please_input_keyword">请输入关键字</string>
@@ -124,22 +162,21 @@
     <string name="temp_no_contact_method">暂无联系方式</string>
     <string name="temp_no_latlng_info">暂无经纬度信息</string>
 
-
     <string name="confirm_logout">是否退出登录？</string>
     <string name="confirm_exit_app">是否退出应用？</string>
     <string name="exit">退出</string>
 
     <string name="locate">定位</string>
+    <string name="locate_success">定位成功</string>
+    <string name="locate_failed">定位失败</string>
     <string name="location">位置</string>
     <string name="location_info">位置信息</string>
     <string name="your_location">您的位置</string>
     <string name="please_locate_your_current_location">请定位您的当前位置</string>
-    <string name="locate_success">定位成功</string>
-    <string name="locate_failed">定位失败</string>
     <string name="locate_failed_confirm_gps">定位失败,请确认定位设置是否打开。</string>
 
-
     <string name="select">选择</string>
+    <string name="please_select">请选择</string>
     <string name="select_all">全选</string>
     <string name="select_all_not">反选</string>
     <string name="select_time">选择时间</string>
@@ -150,4 +187,11 @@
     <string name="file_exist">文件存在</string>
     <string name="file_not_exist">文件不存在</string>
 
+    <string name="complete">完成</string>
+    <string name="complete2">结束</string>
+
+    <string name="main_page">主页</string>
+    <string name="home_page">首页</string>
+    <string name="mine_page">我的</string>
+    <string name="mine_page2">我</string>
 </resources>
